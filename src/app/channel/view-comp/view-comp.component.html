@@ -1,0 +1,139 @@
+<div class="container bg">
+
+  <!--First Date Div Block Start-->
+  <div class="row " >
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-9">
+      <b>{{firstDateFormat | date: 'fullDate'}}</b>
+      <div class="card mt-2 py-3 mb-2" *ngFor="let first of firstArray; let i = index">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-1">
+              <span>
+                <img src="/assets/images/angular.png" class="circleUserListImg" >
+              </span>
+            </div>
+            <div class="col-md-7">
+              <h6><b>{{first.title}}</b></h6><br>
+              <p>{{first.description}}</p>
+            </div>
+            <div class="col-md-3">
+              <span><img src="/assets/images/misko_hevery.jpeg " width="30px" height="30px" class="circleUserListImg" >{{first.instructorName}}</span>
+
+            </div>
+            <div class="col-md-1">
+              <p class="fontSize">{{first.time | date : 'h:mm a'}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <!--First Date Div Block End-->
+
+  <!--Second Date Div Block Start-->
+  <div class="row " >
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-9">
+      <b>{{secondDateFormat | date: 'fullDate'}}</b>
+      <div class="card mt-2 py-3 mb-2" *ngFor="let second of secondArray; let i = index">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-1">
+              <span>
+                <img src="/assets/images/typescript.png" class="circleUserListImg" >
+              </span>
+            </div>
+            <div class="col-md-7">
+              <h6><b>{{second.title}}</b></h6><br>
+              <p>{{second.description}}</p>
+            </div>
+            <div class="col-md-3">
+              <span><img src="/assets/images/anders.jpeg " width="30px" height="30px" class="circleUserListImg" >{{second.instructorName}}</span>
+
+            </div>
+            <div class="col-md-1">
+              <p class="fontSize">{{second.time | date : 'h:mm a'}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <!--Second Date Div Block End-->
+
+  <!--Third Date Div Block Start-->
+  <div class="row " >
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-9">
+      <b>{{thirdDateFormat | date: 'fullDate'}}</b>
+      <div class="card mt-2 py-3 mb-2" *ngFor="let third of thirdArray; let i = index">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-1">
+              <span>
+                <img src="/assets/images/javascript.png" class="circleUserListImg" >
+              </span>
+            </div>
+            <div class="col-md-7">
+              <h6><b>{{third.title}}</b></h6><br>
+              <p>{{third.description}}</p>
+            </div>
+            <div class="col-md-3">
+              <span><img src="/assets/images/brendan_eich.jpeg " width="30px" height="30px" class="circleUserListImg" >{{third.instructorName}}</span>
+
+            </div>
+            <div class="col-md-1">
+              <p class="fontSize">{{third.time | date : 'h:mm a'}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <!--Third Date Div Block End-->
+
+  <!--Forth Date Div Block Start-->
+  <div class="row " >
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-9">
+      <b>{{forthDateFormat | date: 'fullDate'}}</b>
+      <div class="card mt-2 py-3 mb-2" *ngFor="let forth of forthArray; let i = index">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-1">
+              <span>
+                <img src="/assets/images/jquery.png" class="circleUserListImg" >
+              </span>
+            </div>
+            <div class="col-md-7">
+              <h6><b>{{forth.title}}</b></h6><br>
+              <p>{{forth.description}}</p>
+            </div>
+            <div class="col-md-3">
+              <span><img src="/assets/images/john_resig.jpeg " width="30px" height="30px" class="circleUserListImg" >{{forth.instructorName}}</span>
+
+            </div>
+            <div class="col-md-1">
+              <p class="fontSize">{{forth.time | date : 'h:mm a'}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <!--Forth Date Div Block End-->
+
+</div>
